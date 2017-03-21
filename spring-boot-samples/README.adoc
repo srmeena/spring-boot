@@ -36,11 +36,11 @@ The following sample applications are provided:
 | Example show how Spring Boot can be mixed with traditional XML configuration (we
   generally recommend using Java `@Configuration` whenever possible
 
-| link:spring-boot-sample-batch[spring-boot-sample-batch]
-| Define and run a Batch job in a few lines of code
+| link:spring-boot-sample-devtools[spring-boot-sample-devtools]
+| Using DevTools for rapid application development
 
-|
-|
+| ----
+| -----
 
 | link:spring-boot-sample-data-jpa[spring-boot-sample-data-jpa]
 | Stores data using Spring Data JPA with Hibernate
@@ -72,8 +72,8 @@ The following sample applications are provided:
 | link:spring-boot-sample-data-neo4j[spring-boot-sample-data-neo4j]
 | Stores data using Spring Data Neo4j
 
-|
-|
+| --------
+| --------
 
 | link:spring-boot-sample-flyway[spring-boot-sample-flyway]
 | Database migrations with Flyway
@@ -81,14 +81,11 @@ The following sample applications are provided:
 | link:spring-boot-sample-liquibase[spring-boot-sample-liquibase]
 | Database migrations with Liquibase
 
-|
-|
-
 | link:spring-boot-sample-jooq[spring-boot-sample-jooq]
 | Stores data using jOOQ
 
-|
-|
+| --------
+| --------
 
 | link:spring-boot-sample-jta-atomikos[spring-boot-sample-jta-atomikos]
 | JTA transactions with Atomikos
@@ -102,38 +99,17 @@ The following sample applications are provided:
 | link:spring-boot-sample-jta-narayana[spring-boot-sample-jta-narayana]
 | JTA transactions with Narayana
 
-|
-|
-
-| link:spring-boot-sample-devtools[spring-boot-sample-devtools]
-| Using DevTools for rapid application development
-
-|
-|
+| --------
+| --------
 
 | link:spring-boot-sample-integration[spring-boot-sample-integration]
 | Integration application built using Spring Integration and its Java DSL
 
-|
-|
+| link:spring-boot-sample-batch[spring-boot-sample-batch]
+| Define and run a Batch job in a few lines of code
 
-| link:spring-boot-sample-jersey[spring-boot-sample-jersey]
-| RESTful service built using Jersey 2
-
-| link:spring-boot-sample-jersey1[spring-boot-sample-jersey1]
-| RESTful service built using Jersey
-
-| link:spring-boot-sample-jetty[spring-boot-sample-jetty]
-| Embedded Jetty
-
-| link:spring-boot-sample-jetty-ssl[spring-boot-sample-jetty-ssl]
-| Embedded Jetty configured to use SSL
-
-| link:spring-boot-sample-jetty-jsp[spring-boot-sample-jetty-jsp]
-| Web application that uses JSP templates with Jetty
-
-|
-|
+| ----- Metrics -------
+| ----------
 
 | link:spring-boot-sample-metrics-dropwizard[spring-boot-sample-metrics-dropwizard]
 | Demonstrates support for Dropwizard metrics
@@ -144,32 +120,8 @@ The following sample applications are provided:
 | link:spring-boot-sample-metrics-redis[spring-boot-sample-metrics-redis]
 | Exports metrics to Redis
 
-|
-|
-
-| link:spring-boot-sample-secure[spring-boot-sample-secure]
-| Non-web application that uses Spring Security
-
-| link:spring-boot-sample-secure-oauth2-actuator[spring-boot-sample-secure-oauth2-actuator]
-| RESTful service secured using OAuth2 and Actuator
-
-| link:spring-boot-sample-secure-oauth2[spring-boot-sample-secure-oauth2]
-| RESTful service secured using OAuth2
-
-| link:spring-boot-sample-secure-oauth2-resource[spring-boot-sample-secure-oauth2-resource]
-| OAuth2 resource server
-
-|
-|
-
-| link:spring-boot-sample-servlet[spring-boot-sample-servlet]
-| Web application with a "raw" `Servlet` returning plain text content
-
-| link:spring-boot-sample-session-redis[spring-boot-sample-session-redis]
-| Web Application that uses Spring Session to store session data in Redis
-
-|
-|
+| --- Testing-----
+| --------
 
 | link:spring-boot-sample-test[spring-boot-sample-test]
 | Demonstrates Spring Boot's testing capabilities
@@ -177,8 +129,11 @@ The following sample applications are provided:
 | link:spring-boot-sample-testng[spring-boot-sample-testng]
 | Demonstrates TestNG-based testing
 
-|
-|
+| ----Web Apps----
+| --------
+
+| link:spring-boot-sample-servlet[spring-boot-sample-servlet]
+| Web application with a "raw" `Servlet` returning plain text content
 
 | link:spring-boot-sample-traditional[spring-boot-sample-traditional]
 | Traditional WAR packaging  (but also executable using `java -jar`)
@@ -210,6 +165,15 @@ The following sample applications are provided:
 | link:spring-boot-sample-undertow-ssl[spring-boot-sample-undertow-ssl]
 | Embedded Undertow configured to use SSL
 
+| link:spring-boot-sample-jetty[spring-boot-sample-jetty]
+| Embedded Jetty
+
+| link:spring-boot-sample-jetty-ssl[spring-boot-sample-jetty-ssl]
+| Embedded Jetty configured to use SSL
+
+| link:spring-boot-sample-jetty-jsp[spring-boot-sample-jetty-jsp]
+| Web application that uses JSP templates with Jetty
+
 | link:spring-boot-sample-web-freemarker[spring-boot-sample-web-freemarker]
 | Web application that uses FreeMarker templates
 
@@ -221,6 +185,21 @@ The following sample applications are provided:
 
 | link:spring-boot-sample-web-mustache[spring-boot-sample-web-mustache]
 | Web application that uses Mustache views
+
+| link:spring-boot-sample-web-static[spring-boot-sample-web-static]
+| Web application that serves static files
+
+| link:spring-boot-sample-web-ui[spring-boot-sample-web-ui]
+| Web application with a basic UI built using Bootstrap and JQuery
+
+| link:spring-boot-sample-webservices[spring-boot-sample-webservices]
+| Simple contract-first SOAP web service with Spring Web Services
+
+| link:spring-boot-sample-session-redis[spring-boot-sample-session-redis]
+| Web Application that uses Spring Session to store session data in Redis
+
+| --- Security -----
+| -------
 
 | link:spring-boot-sample-web-secure[spring-boot-sample-web-secure]
 | Web application with typical Security configuration enabling a login form
@@ -234,17 +213,20 @@ The following sample applications are provided:
 | link:spring-boot-sample-web-secure-jdbc[spring-boot-sample-web-secure-jdbc]
 | Web application with Spring Security configured to use JDBC authentication
 
-| link:spring-boot-sample-web-static[spring-boot-sample-web-static]
-| Web application that serves static files
+| link:spring-boot-sample-secure[spring-boot-sample-secure]
+| Non-web application that uses Spring Security
 
-| link:spring-boot-sample-web-ui[spring-boot-sample-web-ui]
-| Web application with a basic UI built using Bootstrap and JQuery
+| link:spring-boot-sample-secure-oauth2-actuator[spring-boot-sample-secure-oauth2-actuator]
+| RESTful service secured using OAuth2 and Actuator
 
-| link:spring-boot-sample-webservices[spring-boot-sample-webservices]
-| Simple contract-first SOAP web service with Spring Web Services
+| link:spring-boot-sample-secure-oauth2[spring-boot-sample-secure-oauth2]
+| RESTful service secured using OAuth2
 
-| WebSockets
-| ********************
+| link:spring-boot-sample-secure-oauth2-resource[spring-boot-sample-secure-oauth2-resource]
+| OAuth2 resource server
+
+| --- WebSockets -----
+| --------
 
 | link:spring-boot-sample-websocket-jetty[spring-boot-sample-websocket-jetty]
 | WebSocket application that uses Jetty
@@ -255,14 +237,20 @@ The following sample applications are provided:
 | link:spring-boot-sample-websocket-undertow[spring-boot-sample-websocket-undertow]
 | WebSocket application that uses Undertow
 
-|***************************
-|***************************
+| --- Misc -----
+| --------
 
 | link:spring-boot-sample-activemq[spring-boot-sample-activemq]
 | JMS consumer and producer using Apache ActiveMQ
 
 | link:spring-boot-sample-amqp[spring-boot-sample-amqp]
 | Message-oriented application using AMQP and RabbitMQ
+
+| link:spring-boot-sample-jersey[spring-boot-sample-jersey]
+| RESTful service built using Jersey 2
+
+| link:spring-boot-sample-jersey1[spring-boot-sample-jersey1]
+| RESTful service built using Jersey
 
 | link:spring-boot-sample-ant[spring-boot-sample-ant]
 | Executable JAR build using Ant
@@ -273,8 +261,8 @@ The following sample applications are provided:
 | link:spring-boot-sample-hateoas[spring-boot-sample-hateoas]
 | RESTful API built using Spring Hateoas
 
-|***************************
-|***************************
+| --- Actuator -----
+| --------
 
 | link:spring-boot-sample-actuator[spring-boot-sample-actuator]
 | REST service with production-ready features
